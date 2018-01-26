@@ -18,27 +18,27 @@ Step 3 : install the Go in Ur machine
 But this work for Real in AMD machine
 ======================================
 
-gvm_version=master # you may use a tag like "1.0.22" instead
+      gvm_version=master # you may use a tag like "1.0.22" instead
  
-# Install OS level dependencies (see the GVM README for other distros)
-sudo apt-get install curl git mercurial make binutils bison gcc build-essential
+      # Install OS level dependencies (see the GVM README for other distros)
+      sudo apt-get install curl git mercurial make binutils bison gcc build-essential
  
-# Install GVM
-cd /tmp
-curl -sOSL "https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer"
-view gvm-installer # give the "gvm-installer" script a short review
-bash gvm-installer "$gvm_version" "$HOME/.local"
-. ~/.local/gvm/scripts/gvm
+      # Install GVM
+      cd /tmp
+      curl -sOSL "https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer"
+      view gvm-installer # give the "gvm-installer" script a short review
+      bash gvm-installer "$gvm_version" "$HOME/.local"
+      . ~/.local/gvm/scripts/gvm
  
-# Install bootstrapping version, alternatively you could do…
-#   sudo apt-get install golang
-#   export GOROOT_BOOTSTRAP=$(ls -1d /usr/lib/go-[0-9]* | tail -n1)
-gvm install "go1.4" -B
-gvm use "go1.4"
-export GOROOT_BOOTSTRAP=$GOROOT
+      # Install bootstrapping version, alternatively you could do…
+      #   sudo apt-get install golang
+      #   export GOROOT_BOOTSTRAP=$(ls -1d /usr/lib/go-[0-9]* | tail -n1)
+      gvm install "go1.4" -B
+      gvm use "go1.4"
+      export GOROOT_BOOTSTRAP=$GOROOT
  
-# List available go *release* versions
-gvm listall | egrep 'go[.0-9]+$'
+      # List available go *release* versions
+      gvm listall | egrep 'go[.0-9]+$'
       
       
       
