@@ -10,9 +10,10 @@ Step 2 : install the Dependencey
       
 Step 3 : install the Go in Ur machine
       ==>$ gvm install go1.4
-      
-      
+   
 (Credit Referance : https://github.com/moovweb/gvm ||  http://www.hostingadvice.com/how-to/install-golang-on-ubuntu/)
+
+
       
 But this work for Real in AMD machine
 ======================================
